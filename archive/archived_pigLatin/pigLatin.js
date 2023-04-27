@@ -1,6 +1,6 @@
 function pigLatin(str) {
     return str.split(' ').map(word => pigLatinize(word)).join(' ');
-};
+}
 
 function pigLatinize(word) {
     const regex = /^[^aeiouq]*qu|^[^aeiou]*/i;
