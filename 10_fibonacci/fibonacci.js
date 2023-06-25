@@ -1,6 +1,9 @@
 const fibonacci = function(count) {
-    if (count < 1) {
+    if (count < 0) {
         return "OOPS";
+    }
+    if (count === 0) {
+        return 0;
     }
     let fib1 = 0;
     let fib2 = 1;

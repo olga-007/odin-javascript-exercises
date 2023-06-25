@@ -40,15 +40,15 @@ describe('sum', () => {
 
 describe('multiply', () => {
 	test('multiplies no numbers', () => {
-		expect(calculator.multiply([])).toBe(0);
+		expect(calculator.multiply()).toBe(0);
 	});
 
 	test('multiplies two numbers', () => {
-		expect(calculator.multiply([2,4])).toBe(8);
+		expect(calculator.multiply(2,4)).toBe(8);
 	});
 
 	test('multiplies several numbers', () => {
-		expect(calculator.multiply([2,4,6,8,10,12,14])).toBe(645120);
+		expect(calculator.multiply(2,4,6,8,10,12,14)).toBe(645120);
 	});
 });
 
